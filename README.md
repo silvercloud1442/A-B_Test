@@ -1,4 +1,4 @@
-# A/B Test Automation with Apache Airflow  
+# A/B Test
 
 ## Описание проекта  
 
