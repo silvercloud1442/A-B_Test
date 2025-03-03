@@ -17,7 +17,6 @@ import boto3
 import json
 
 
-# --- Конфигурация ---
 BUCKET_NAME = "silvercloud.airflow.bucket"
 PARAMS_FILE = "ab_test_params.json"
 DATA_FILE = "ab_test_data.csv"
@@ -149,7 +148,7 @@ default_args = {
 dag = DAG(
     "ab_test_pipeline",
     default_args=default_args,
-    schedule_interval="*/1 * * * *",  # DAG запускается раз в день
+    schedule_interval="*/1 * * * *",  # DAG запускается раз в "день"
 )
 
 # --- Определяем таски ---
